@@ -174,11 +174,11 @@ namespace LR1_PRUN_M_PM
             var max = 0.0;
             var index = 0;
 
-            Console.WriteLine("Окончательные приоритеты альтернатив:");
+            sw.WriteLine("Окончательные приоритеты альтернатив:");
 
             for (int i = 0; i < result.Length; i++)
             {
-                Console.WriteLine("W" + (i + 1) + " = " + result[i]);
+                Console.WriteLine("w" + (i + 1) + " = " + result[i]);
                 if (result[i] > max)
                 {
                     max = result[i]; 
@@ -186,9 +186,9 @@ namespace LR1_PRUN_M_PM
                 }
             }
 
-            Console.WriteLine("Оптимальная альтернатива x" + (index + 1) + ", w" + (index + 1) + " = " + result[index] + ".");
+            sw.WriteLine("Оптимальная альтернатива x" + (index + 1) + ", w" + (index + 1) + " = " + result[index] + ".");
 
-            Console.WriteLine("Press any key to continue...");
+            sw.Close();
         }
     }
 }
